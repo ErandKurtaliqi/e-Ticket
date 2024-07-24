@@ -11,11 +11,22 @@ namespace WebApplication1.Models
         [Key]
         public int Id { get; set; }
 
+        [Display(Name = "Name")]
         public string Name { get; set; }
+
+        [Display(Name = "Description")]
         public string Description { get; set; }
+
+        [Display(Name = "Price")]
         public double Price { get; set; }
+
+        [Display(Name = "Image")]
         public string ImageURL { get; set; }
+
+        [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
+
+        [Display(Name = "End Date")]
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
 

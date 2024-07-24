@@ -15,7 +15,7 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             var data = _context.Producers.ToList();
-            return View();
+            return View(data);
         }
     }
 }
